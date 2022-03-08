@@ -1,5 +1,7 @@
 * {
     font-family: monospace;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -37,7 +39,7 @@ h3 {
     background-color: #011638;
 }
 
-#projects {
+#projects, #contact {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -49,18 +51,12 @@ h3 {
 #projects:hover h3 {
     font-size: 30px;
     transform: translateY(-40px);
+    transition: 250ms;
 }
 
-#contact {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-left: 1px solid black;
-}
 
 #contact:hover h3 {
     font-size: 30px;
     transform: translateY(-40px);
+    transition: 250ms;
 }
