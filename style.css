@@ -1,3 +1,66 @@
+* {
+    font-family: monospace;
+}
+
 body {
+    overflow: hidden;
+}
+
+main {
+    height: 100vh;
     text-align: center;
+    color: #EEC643;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+#greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    background-color: black;
+    border: 1px solid black;
+    border-bottom: none;
+}
+
+#info {
+    display: flex;
+    height: 25%;
+    transition: 250ms;
+    background-color: #011638;
+}
+
+#projects {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-right: 1px solid black;
+}
+
+#projects:hover h3 {
+    font-size: 30px;
+    transform: translateY(-40px);
+}
+
+#contact {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-left: 1px solid black;
+}
+
+#contact:hover h3 {
+    font-size: 30px;
+    transform: translateY(-40px);
 }
