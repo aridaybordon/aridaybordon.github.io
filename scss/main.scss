@@ -1,0 +1,50 @@
+@import "./resets";
+@import "./variables";
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    height: 100vh;
+    font-family: monospace;
+    color: $primary-color;
+}
+
+#greeting {
+    @include flexCenter;
+    height: 75%;
+    background-color: black;
+    border: 1px solid black;
+    border-bottom: none;
+
+    h1 {
+        font-size: 50px;
+    }
+}
+
+#info {
+    display: flex;
+    height: 25%;
+    background-color: #011638;
+}
+
+#projects, #contact {
+    @include flexCenter;
+    width: 50%;
+    flex-direction: column;
+    
+    h3 {
+        font-size: 40px;
+        transform: translateY(0);
+        transition: all 200ms ease-in-out;
+    }
+
+    &:hover h3 {
+        font-size: 30px;
+        transform: translateY(-40px);
+    }
+}

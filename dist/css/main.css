@@ -1,0 +1,78 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  font-family: monospace;
+  color: #EEC643;
+}
+
+#greeting {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  height: 75%;
+  background-color: black;
+  border: 1px solid black;
+  border-bottom: none;
+}
+
+#greeting h1 {
+  font-size: 50px;
+}
+
+#info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25%;
+  background-color: #011638;
+}
+
+#projects, #contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#projects h3, #contact h3 {
+  font-size: 40px;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+#projects:hover h3, #contact:hover h3 {
+  font-size: 30px;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+}
+/*# sourceMappingURL=main.css.map */
