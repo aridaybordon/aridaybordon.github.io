@@ -17,6 +17,12 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 3fr 1fr;
+    pointer-events: none;
+    transition: all 250ms ease-in-out;
+
+    &:hover {
+        grid-template-rows: 3fr 2fr;
+    }
 }
 
 #greeting {
@@ -25,7 +31,6 @@ main {
     background-color: black;
     border: 1px solid black;
     border-bottom: none;
-    transition: all 250ms ease-in-out;
 
     h1 {
         font-size: $h1-size;
@@ -36,17 +41,14 @@ main {
     @include flexCenter;
     flex-direction: column;
     border: 1px solid black;
+    pointer-events: auto;
     
     h3 {
         font-size: $h3-size;
         transition: all 200ms ease-in-out;
     }
 
-    &:hover {
-        grid-template-rows: repeat(1fr, 2fr);
-    }
-
     &:hover h3 {
-        font-size: 30px;
+        font-size: 2rem;
     }
 }
