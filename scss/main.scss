@@ -27,16 +27,21 @@ main {
 }
 
 .show-on-touch {
-    display: none;
+    position: relative;
+    top: 10%;
+    opacity: 0;
+    transition: all 150ms ease-in-out;
+    transition-delay: 100ms;
 }
 
 .icons {
     display: flex;
+    padding: 3%;
     justify-content: center;
 
     img {
-        height: 30px;
-        width: 30px;
+        height: 35px;
+        width: 35px;
     }
 
     a {
@@ -71,15 +76,13 @@ main {
     }
 
     &:hover {
-
         h3 {
             transform: translateY(-100%);
             font-size: 2.3rem;
         }
 
         .show-on-touch {
-            display: block;
+            opacity: 1;
         }
-        
     }
 }

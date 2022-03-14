@@ -54,21 +54,28 @@ main {
 }
 
 .show-on-touch {
-  display: none;
+  position: relative;
+  top: 10%;
+  opacity: 0;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  -webkit-transition-delay: 100ms;
+          transition-delay: 100ms;
 }
 
 .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 3%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 .icons img {
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
 }
 
 .icons a {
@@ -140,6 +147,6 @@ main {
 }
 
 #projects:hover .show-on-touch, #contact:hover .show-on-touch {
-  display: block;
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
