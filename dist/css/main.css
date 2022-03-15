@@ -53,7 +53,7 @@ main {
 }
 
 .wrapper:hover #intro {
-  opacity: .2;
+  opacity: .15;
 }
 
 .show-on-touch {

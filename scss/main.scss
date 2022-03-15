@@ -1,13 +1,6 @@
 @import "./resets";
 @import "./variables";
-
-@mixin flexCenter($flex-direction: row) {
-    display: flex;
-    flex-direction: $flex-direction;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+@import "./mixing";
 
 main {
     height: 100vh;
@@ -26,7 +19,7 @@ main {
         grid-template-rows: 5fr 2fr;
 
         #intro {
-            opacity: .2;
+            opacity: .15;
         }
     }
 }

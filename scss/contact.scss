@@ -1,0 +1,16 @@
+@import "./resets";
+@import "./variables";
+@import "./mixing";
+
+body {
+    height: 100vh;
+    color: $first-color;
+    background-color: $secon-color;
+    align-content: center;
+}
+
+form {
+    @include flexCenter(column);
+    width: 60%;
+    border: 1px solid $first-color;
+}
