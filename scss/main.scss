@@ -11,7 +11,8 @@
 
 main {
     height: 100vh;
-    color: $primary-color;
+    color: $first-color;
+    background-color: $secon-color;
 }
 
 .wrapper {
@@ -23,6 +24,10 @@ main {
 
     &:hover {
         grid-template-rows: 5fr 2fr;
+
+        #intro {
+            opacity: .2;
+        }
     }
 }
 
@@ -49,16 +54,23 @@ main {
     }
 }
 
-#greeting {
-    @include flexCenter(column);
+#intro {
+    @include flexCenter(row);
     grid-column: 1/3;
-    background-color: black;
-    border: 1px solid black;
-    border-bottom: none;
+    background-color: $secon-color;
+    opacity: 1;
+    transition: all $transition-wrapper ease-in-out;
 
-    h1 {
-        font-size: $h1-size;
+    img {
+        margin: 0 40px;
+        width: 250px;
+        height: 250px;
+        border-radius: 125px;
     }
+}
+
+#greeting h1 {
+        font-size: $h1-size;
 }
 
 #projects, #contact {
@@ -66,7 +78,8 @@ main {
     position: relative;
     flex-direction: column;
     border: 1px solid black;
-    background-color: $secondary-color;
+    color: $secon-color;
+    background-color: $first-color;
     pointer-events: auto;
     
     h3 {
