@@ -18,13 +18,20 @@ h3 {
   position: absolute;
 }
 
-body {
+main {
   color: #EEC643;
   background-color: #000;
-  height: 100vh;
-  -ms-flex-line-pack: center;
-      align-content: center;
   position: relative;
+  height: 100vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 4fr;
+      grid-template-columns: 3fr 4fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 form {
@@ -44,10 +51,10 @@ form {
   text-align: center;
   color: #000;
   background-color: #EEC643;
-  margin: auto;
-  width: 60%;
-  height: 80%;
+  margin: 0 auto;
   border: 1px solid #EEC643;
+  height: 90%;
+  width: 90%;
 }
 
 label {
@@ -58,9 +65,34 @@ label {
           justify-content: center;
 }
 
+#contact-msg {
+  color: #EEC643;
+  background-color: #000;
+}
+
+#contact-msg h1 {
+  font-size: 5rem;
+}
+
 .form-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  padding: 10px;
+}
+
+#umessage {
+  width: 100%;
+  line-height: 140%;
+  word-break: break-all;
+}
+
+#submit {
+  padding: 5px 10px;
 }
 /*# sourceMappingURL=contact.css.map */
