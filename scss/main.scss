@@ -26,24 +26,23 @@ main {
 
 .show-on-touch {
     position: relative;
-    top: 10%;
+    top: 15%;
     opacity: 0;
     transition: all 150ms ease-in-out;
     transition-delay: 100ms;
 }
 
 .icons {
-    display: flex;
     padding: 3%;
+    display: flex;
     justify-content: center;
 
     img {
         height: 35px;
-        width: 35px;
     }
 
     a {
-        padding: 5px;
+        padding: 1%;
     }
 }
 
