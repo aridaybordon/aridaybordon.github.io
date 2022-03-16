@@ -49,8 +49,8 @@ main {
 
 #intro {
     @include flexCenter(row);
+    @include normalColors;
     grid-column: 1/3;
-    background-color: $secon-color;
     opacity: 1;
     transition: all $transition-wrapper ease-in-out;
 
@@ -64,15 +64,15 @@ main {
 
 #greeting h1 {
         font-size: $h1-size;
+        font-weight: bold
 }
 
 #projects, #contact {
     @include flexCenter;
+    @include invertColors;
     position: relative;
     flex-direction: column;
     border: 1px solid black;
-    color: $secon-color;
-    background-color: $first-color;
     pointer-events: auto;
     
     h3 {
@@ -84,7 +84,7 @@ main {
     &:hover {
         h3 {
             transform: translateY(-100%);
-            font-size: 2.3rem;
+            font-size: $h3-small;
         }
 
         .show-on-touch {

@@ -5,3 +5,13 @@
     align-items: center;
     text-align: center;
 }
+
+@mixin normalColors {
+    color: $first-color;
+    background-color: $secon-color;
+}
+
+@mixin invertColors {
+    color: $secon-color;
+    background-color: $first-color;
+}

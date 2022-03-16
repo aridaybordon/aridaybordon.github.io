@@ -3,14 +3,28 @@
 @import "./mixing";
 
 body {
+    @include normalColors;
     height: 100vh;
-    color: $first-color;
-    background-color: $secon-color;
     align-content: center;
+    position: relative;
 }
 
 form {
     @include flexCenter(column);
+    @include invertColors;
+    
+    margin: auto;
     width: 60%;
+    height: 80%;
     border: 1px solid $first-color;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.form-item {
+    display: flex;
 }
