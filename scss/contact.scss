@@ -14,20 +14,26 @@ main {
     text-align: center;
 }
 
-form {
+form {    
+    width: 70%;
+}
+
+.form-group {
     @include flexCenter(column);
-    @include invertColors;
-    
-    margin: 0 auto;
-    border: 1px solid $first-color;
-    height: 90%;
-    width: 90%;
+    padding: 2% 0;
+
+    align-items: center;
 }
 
 label {
     font-size: 1rem;
     font-weight: bold;
-    justify-content: center;
+}
+
+input, textarea {
+    padding: .1rem .3rem;
+    background-color: $secon-color !important;
+    color: $first-color !important;
 }
 
 #contact-msg {
@@ -39,22 +45,33 @@ label {
 }
 
 .form-item {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
+    text-align: center;
+    width: 60%;
     padding: 10px;
 }
 
-.form-submit {
-    margin-top: 200px;
+.myContainer {
+    @include flexCenter(column);
+    @include invertColors;
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
 }
 
 #umessage {
-    width: 100%; 
-    line-height:140%;
-    word-break: break-all;
+    height:150px;
+    resize: none;
 }
 
 #submit {
-    padding: 5px 10px;
+    padding: 5px 20px;
+    font-weight: bold;
+    width: 50%;
+    margin: 20px auto;
+}
+
+#info-advert {
+    position: absolute;
+    bottom: 7%;
+    font-size: small;
 }
