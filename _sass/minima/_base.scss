@@ -22,6 +22,7 @@ body {
      -moz-font-feature-settings: "kern" 1;
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
+  font-family: var(--bs-font-sans-serif);
   font-kerning: normal;
   display: flex;
   min-height: 100vh;
@@ -105,6 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $brand-color;
   text-decoration: none;
+  transition: all 100ms ease-in-out;
 
   &:visited {
     color: darken($brand-color, 15%);
@@ -149,13 +151,19 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
+  border: 2px $text-color solid;
   border-radius: 3px;
-  background-color: #eef;
+  color: $text-color;
+  background-color: #000;
 }
 
 code {
   padding: 1px 5px;
+}
+
+.language-plaintext {
+  color: #000 !important;
+  background-color: $text-color !important;
 }
 
 pre {
@@ -220,6 +228,10 @@ pre {
 .social-media-list {
   li + li {
     padding-top: 5px;
+  }
+
+  li {
+    display: flex;
   }
 }
 
