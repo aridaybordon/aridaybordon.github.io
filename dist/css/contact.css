@@ -1,0 +1,125 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  font-family: monospace;
+}
+
+a {
+  font-weight: bold;
+}
+
+h3 {
+  position: absolute;
+}
+
+main {
+  color: #EEC643;
+  background-color: #000;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 4fr;
+      grid-template-columns: 3fr 4fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+form {
+  width: 70%;
+}
+
+.form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 2% 0;
+  align-items: center;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: .1rem .3rem;
+  background-color: #000 !important;
+  color: #EEC643 !important;
+}
+
+#contact-msg {
+  color: #EEC643;
+  background-color: #000;
+}
+
+#contact-msg h1 {
+  font-size: 5rem;
+}
+
+.form-item {
+  text-align: center;
+  width: 60%;
+  padding: 10px;
+}
+
+.myContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #000;
+  background-color: #EEC643;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+}
+
+#umessage {
+  height: 150px;
+  resize: none;
+}
+
+#submit {
+  padding: 5px 20px;
+  font-weight: bold;
+  width: 50%;
+  margin: 20px auto;
+}
+
+#info-advert {
+  position: absolute;
+  bottom: 7%;
+  font-size: small;
+}
+/*# sourceMappingURL=contact.css.map */

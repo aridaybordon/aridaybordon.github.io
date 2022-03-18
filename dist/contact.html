@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <title>Hi, I'm Aridai | Contact</title>
+    <link rel="icon" href="/dist/assets/images/favicon3.png">
+</head>
+<body>
+    <main>
+        <div id="contact-msg">
+            <h1>Contact me</h1>
+        </div>
+        <div class="myContainer">
+            <form id="contact-form" role="form">
+                <div class="controls">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter firstname" required="required" data-error="Firstname is required."> 
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Enter lastname" required="required" data-error="Lastname is required.">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your email" required="required" data-error="Valid email is required.">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Write your message here" rows="6" required="required" data-error="Please, leave us a message."></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12"> <input type="submit" id="submit" class="btn btn-success btn-send pt-2 btn-block " value="Send Message"> </div>
+                    </div>
+                </div>
+            </form>
+            <p id="info-advert">Your personal information <b>WON'T</b> be stored in this website.</p>
+        </div>
+    </main>
+</body>
+</html>
