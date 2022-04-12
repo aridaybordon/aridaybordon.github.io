@@ -11,8 +11,6 @@
           <li class="p-name">
             {%- if site.author -%}
               {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
             {%- endif -%}
             </li>
             {%- if site.email -%}
@@ -21,9 +19,11 @@
         </ul>
       </div>
 
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
+      <!--
+        <div class="footer-col footer-col-2">
+          {%- include social.html -%}
+        </div>
+      -->
 
       <div class="footer-col footer-col-3">
         <p>{{- site.description | escape -}}</p>
