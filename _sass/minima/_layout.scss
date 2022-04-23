@@ -1,4 +1,5 @@
 @import "./reset"; 
+@import "./mixing";
 
 /**
  * Site header
@@ -9,13 +10,16 @@
   border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
 
+  @include invertColors;
+
   // Positioning context for the mobile navigation icon
   position: relative;
 }
 
 .site-title {
   @include relative-font-size(1.625);
-  font-weight: 300;
+  font-weight: bold;
+  font-size: 50px;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
@@ -40,7 +44,7 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: $background-color;
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
@@ -109,6 +113,7 @@
  * Site footer
  */
 .site-footer {
+  @include invertColors;
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
 }
@@ -116,6 +121,7 @@
 .footer-heading {
   @include relative-font-size(1.125);
   margin-bottom: $spacing-unit / 2;
+  font-weight: bold;
 }
 
 .contact-list,
@@ -188,7 +194,8 @@
 }
 
 .post-list-heading {
-  @include relative-font-size(1.75);
+  @include relative-font-size(2);
+  font-weight: bold;
 }
 
 .post-list {
@@ -196,13 +203,16 @@
   list-style: none;
 
   > li {
+    padding: 20px 10px;
     margin-bottom: $spacing-unit;
+    border: 3px solid $text-color;
+    border-radius: 3px;
   }
 }
 
 .post-meta {
   font-size: $small-font-size;
-  color: $grey-color;
+  color: $text-color;
 }
 
 .post-item {
@@ -217,15 +227,17 @@
 .tags {
   display: flex;
   margin: 0;
+  padding: 5px 0;
   align-items: center;
   list-style: none;
 
   > li {
+    @include invertColors;
     display: flex;
     margin: 0;
     margin-right: 10px;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid $text-color;
     padding: 2px 10px;
     border-radius: 5px;
   }

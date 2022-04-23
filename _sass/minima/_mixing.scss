@@ -1,0 +1,6 @@
+// Mixing functions
+
+@mixin invertColors {
+    color: $background-color;
+    background-color: $text-color;
+}

@@ -1,3 +1,5 @@
+@import "./mixing";
+
 /**
  * Reset some basic elements
  */
@@ -27,8 +29,6 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
-
-
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -105,7 +105,6 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $brand-color;
   text-decoration: none;
-
   &:visited {
     color: darken($brand-color, 15%);
   }
@@ -149,9 +148,9 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
+  border: 1px solid $text-color;
   border-radius: 3px;
-  background-color: #eef;
+  background-color: $background-color;
 }
 
 code {
